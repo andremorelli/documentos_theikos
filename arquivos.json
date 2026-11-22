@@ -1,15 +1,15 @@
 {
   "pdfs": [
     { "nome": "Manual da Impressora X", "arquivo": "arquivos/pdfs/manual-impressora.pdf" },    
-    { "nome": "Teste dobra tripla", "arquivo": "arquivos/pdfs/teste dobra tripla.pdf" },
-    { "nome": "Teste gibi", "arquivo": "arquivos/pdfs/teste gibi.pdf" },
-    { "nome": "Teste Linhas CYMK", "arquivo": "arquivos/pdfs/teste linhas CYMK.pdf"},
-    { "nome": "Teste Passagem Papel", "arquivo": "arquivos/pdfs/teste passagem papel.pdf"},
-    { "nome": "Teste Revista 01", "arquivo": "arquivos/pdfs/teste revista 01.pdf"},
-    { "nome": "Teste Revista 04", "arquivo": "arquivos/pdfs/teste revista 04.pdf"},
-    { "nome": "Manual de partes e peças c368", "arquivo": "arquivos/pdfs/manual de partes e peças c368.pdf"},
-    { "nome": "Manual de partes e peças c458", "arquivo": "arquivos/pdfs/manual de partes e peças c458.pdf"},
-    { "nome": "Manual de partes e peças c558", "arquivo": "arquivos/pdfs/manual de partes e peças c558.pdf"}
+    { "nome": "Teste dobra tripla", "arquivo": "arquivos/pdfs/teste-dobra-tripla.pdf" },
+    { "nome": "Teste gibi", "arquivo": "arquivos/pdfs/teste-gibi.pdf" },
+    { "nome": "Teste Linhas CYMK", "arquivo": "arquivos/pdfs/teste-linhas-CYMK.pdf"},
+    { "nome": "Teste Passagem Papel", "arquivo": "arquivos/pdfs/teste-passagem-papel.pdf"},
+    { "nome": "Teste Revista 01", "arquivo": "arquivos/pdfs/teste-revista-01.pdf"},
+    { "nome": "Teste Revista 04", "arquivo": "arquivos/pdfs/teste-revista-04.pdf"},
+    { "nome": "Manual de partes e peças c368", "arquivo": "arquivos/pdfs/manual-de-partes-e-peças-c368.pdf"},
+    { "nome": "Manual de partes e peças c458", "arquivo": "arquivos/pdfs/manual-de-partes-e-peças-c458.pdf"},
+    { "nome": "Manual de partes e peças c558", "arquivo": "arquivos/pdfs/manual-de-partes-e-peças-c558.pdf"}
   ],
   "docs": [
     { "nome": "Formulário Editável", "arquivo": "arquivos/docs/formulario-editavel.docx" },
