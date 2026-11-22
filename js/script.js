@@ -62,18 +62,22 @@ function renderArquivos(lista, containerId, emptyId, icone) {
   }
   if (empty) empty.style.display = 'none';
 
-  container.innerHTML = filtrados.map(item => `
+  container.innerHTML = filtrados.map(item => {
+    // Transforma o caminho local em link Raw do GitHub automaticamente
+    const linkRaw = `https://raw.githubusercontent.com/andremorelli/documentos_theikos/main/${item.arquivo}`;
+
+    return `
     <div class="card">
       <div class="icon">${icone}</div>
       <h3>${item.nome}</h3>
       
-      <!-- Botão Baixar: usa o atributo download -->
-      <a href="${item.arquivo}" download="${item.nome}" style="background:#3498db;">⬇ Baixar</a>
+      <!-- Botão Baixar usando o link Raw -->
+      <a href="${linkRaw}" download target="_blank" rel="noopener">⬇ Baixar</a>
       
-      <!-- Botão Ver: abre o PDF direto no navegador em nova aba (se for PDF) -->
-      ${item.arquivo.toLowerCase().endsWith('.pdf') ? `<a href="${item.arquivo}" target="_blank" rel="noopener" style="margin-left:6px;background:#2ecc71;">👁 Ver</a>` : ''}
+      <!-- Botão Ver usando o link Raw -->
+      ${item.arquivo.toLowerCase().endsWith('.pdf') ? `<a href="${linkRaw}" target="_blank" rel="noopener" style="margin-left:6px;background:#2ecc71;">👁 Ver</a>` : ''}
     </div>
-  `).join('');
+  `}).join('');
 }
 
 // ================= RENDERIZAR FOTOS =================
