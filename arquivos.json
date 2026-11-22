@@ -11,7 +11,7 @@
     { "nome": "Teste gibi", "arquivo": "arquivos/pdfs/teste-gibi.pdf" },
     {
       "nome": "Teste Linhas CYMK",
-      "arquivo": "arquivos/pdfs/teste-linhas-CYMK.pdf"
+      "arquivo": "arquivos/pdfs/teste-linhas-cymk.pdf"
     },
     {
       "nome": "Teste Passagem Papel",
@@ -27,15 +27,15 @@
     },
     {
       "nome": "Manual de partes e peças c368",
-      "arquivo": "arquivos/pdfs/manual-de-partes-e-peças-c368.pdf"
+      "arquivo": "arquivos/pdfs/manual-de-partes-e-pecas-c368.pdf"
     },
     {
       "nome": "Manual de partes e peças c458",
-      "arquivo": "arquivos/pdfs/manual-de-partes-e-peças-c458.pdf"
+      "arquivo": "arquivos/pdfs/manual-de-partes-e-pecas-c458.pdf"
     },
     {
       "nome": "Manual de partes e peças c558",
-      "arquivo": "arquivos/pdfs/manual-de-partes-e-peças-c558.pdf"
+      "arquivo": "arquivos/pdfs/manual-de-partes-e-pecas-c558.pdf"
     }
   ],
   "docs": [
