@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Central de Arquivos</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Adicione a imagem da logo aqui -->
+      <img src="logo.webp" alt="Logo THEIKÓS" class="logo">
+      <h1>📁 Central de Arquivos</h1>
+      <p class="subtitle">Consulte, baixe e gerencie seus arquivos</p>
+    </header>
+
+    <!-- BARRA DE BUSCA GLOBAL -->
+    <div class="search-bar">
+      <input type="search" id="search" placeholder="🔍 Buscar arquivos..." />
+    </div>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="pdf">📄 PDFs</button>
+      <button class="tab-btn" data-tab="docs">📝 Documentos</button>
+      <button class="tab-btn" data-tab="fotos">🖨️ Impressoras</button>
+      <button class="tab-btn" data-tab="upload">⬆️ Upload</button>
+    </nav>
+
+    <section id="pdf" class="tab-content active">
+      <h2>Arquivos PDF</h2>
+      <div class="card-grid" id="pdf-list"></div>
+      <p class="empty-msg" id="pdf-empty" style="display: none">
+        Nenhum PDF encontrado.
+      </p>
+    </section>
+
+    <section id="docs" class="tab-content">
+      <h2>Documentos Editáveis</h2>
+      <div class="card-grid" id="docs-list"></div>
+      <p class="empty-msg" id="docs-empty" style="display: none">
+        Nenhum documento encontrado.
+      </p>
+    </section>
+
+    <section id="fotos" class="tab-content">
+      <h2>Impressoras e Peças</h2>
+      <div class="card-grid" id="fotos-list"></div>
+      <p class="empty-msg" id="fotos-empty" style="display: none">
+        Nenhuma foto encontrada.
+      </p>
+    </section>
+
+    <!-- ABA UPLOAD -->
+    <section id="upload" class="tab-content">
+      <h2>Adicionar Arquivos (Local)</h2>
+      <p class="upload-info">
+        ⚠️ Os arquivos enviados aqui ficam salvos
+        <strong>apenas no seu navegador</strong> (IndexedDB). Para publicar no
+        GitHub Pages, suba os arquivos nas pastas <code>arquivos/</code> e
+        adicione ao <code>arquivos.json</code>.
+      </p>
+
+      <div class="upload-box">
+        <label for="file-input" class="upload-label">
+          <span>📤 Clique ou arraste arquivos aqui</span>
+          <small>PDF, DOC, DOCX, XLS, XLSX, JPG, PNG</small>
+        </label>
+        <input
+          type="file"
+          id="file-input"
+          multiple
+          accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png"
+        />
+      </div>
+
+      <div class="card-grid" id="local-list"></div>
+      <p class="empty-msg" id="local-empty">Nenhum arquivo enviado ainda.</p>
+    </section>
+
+    <!-- MODAL DE IMAGEM -->
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img" alt="" />
+      <div id="caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
