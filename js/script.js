@@ -66,8 +66,12 @@ function renderArquivos(lista, containerId, emptyId, icone) {
     <div class="card">
       <div class="icon">${icone}</div>
       <h3>${item.nome}</h3>
-      <a href="${item.arquivo}" download target="_blank" rel="noopener">⬇ Baixar</a>
-      ${item.arquivo.toLowerCase().endsWith('.pdf') ? `<a href="https://docs.google.com/viewer?url=${window.location.origin}${window.location.pathname}${item.arquivo}" target="_blank" rel="noopener" style="margin-left:6px;background:#2ecc71;">👁 Ver</a>` : ''}  
+      
+      <!-- Botão Baixar: usa o atributo download -->
+      <a href="${item.arquivo}" download="${item.nome}" style="background:#3498db;">⬇ Baixar</a>
+      
+      <!-- Botão Ver: abre o PDF direto no navegador em nova aba (se for PDF) -->
+      ${item.arquivo.toLowerCase().endsWith('.pdf') ? `<a href="${item.arquivo}" target="_blank" rel="noopener" style="margin-left:6px;background:#2ecc71;">👁 Ver</a>` : ''}
     </div>
   `).join('');
 }
